@@ -16,7 +16,7 @@ Expense Planner is a personal expense planner app that helps user keep track of 
 ### User Stories
 
 - [x] User shall be able to add new expenses with the following parameters: name, price, and date.
-- [ ] User shall be able to see a chart showing their spending habits from the past seven days.
+- [x] User shall be able to see a chart showing their spending habits from the past seven days.
 - [ ] User shall be able to remove expenses.
 
 ## App Walkthrough
