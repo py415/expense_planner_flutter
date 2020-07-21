@@ -15,7 +15,7 @@ Expense Planner is a personal expense planner app that helps user keep track of 
 ## Product Specs
 ### User Stories
 
-- [ ] User shall be able to add new expenses with name, price, and date for expense.
+- [x] User shall be able to add new expenses with the following parameters: name, price, and date.
 - [ ] User shall be able to see a chart showing their spending habits from the past seven days.
 - [ ] User shall be able to remove expenses.
 
@@ -31,6 +31,7 @@ Here's a GIF of how the app works:
 
 - [cupertino_icons](https://github.com/flutter/cupertino_icons) - This is an asset repo containing the default set of icon assets used by Flutter's [Cupertino widgets](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/cupertino).
 - [pedantic](https://github.com/dart-lang/pedantic) - Most of the recommended lints directly implement the guidelines set out in [Effective Dart](https://dart.dev/guides/language/effective-dart).
+- [intl](https://github.com/dart-lang/intl) - A package that provides internationalization and localization facilities, including message translation, plurals and genders, date/number formatting and parsing, and bidirectional text.
 
 ## Credits
 
