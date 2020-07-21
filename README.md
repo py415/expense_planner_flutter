@@ -17,15 +17,15 @@ Expense Planner is a personal expense planner app that helps user keep track of 
 
 - [x] User shall be able to add new expenses with the following parameters: name, price, and date.
 - [x] User shall be able to see a chart showing their spending habits from the past seven days.
-- [ ] User shall be able to remove expenses.
+- [x] User shall be able to remove expenses.
 
 ## App Walkthrough
 
 Here's a GIF of how the app works:
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-expenseplanner.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-expense-planner.gif" width=250>
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-expenseplanner.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-expense-planner.gif" width=250>
 
 ## Libraries
 

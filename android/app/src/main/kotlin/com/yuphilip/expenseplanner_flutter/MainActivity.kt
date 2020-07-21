@@ -1,4 +1,4 @@
-package com.yuphilip.expenseplanner_flutter
+package com.yuphilip.expense_planner_flutter
 
 import io.flutter.embedding.android.FlutterActivity
 
