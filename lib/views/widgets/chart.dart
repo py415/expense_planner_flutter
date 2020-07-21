@@ -1,7 +1,8 @@
-import 'package:expenseplanner_flutter/models/transaction.dart';
-import 'package:expenseplanner_flutter/views/widgets/chart_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
+import '../../models/transaction.dart';
+import '../../views/widgets/chart_bar.dart';
 
 class Chart extends StatelessWidget {
   final List<Transaction> recentTransactions;
@@ -23,14 +24,11 @@ class Chart extends StatelessWidget {
         }
       }
 
-      print('weekDay: ${DateFormat.E().format(weekDay)}');
-      print('totalSum $totalSum');
-
       return {
-        'day': DateFormat.E().format(weekDay).substring(0, 1),
+        'day': DateFormat.E().format(weekDay),
         'amount': totalSum,
       };
-    });
+    }).reversed.toList();
   }
 
   double get totalSpending {

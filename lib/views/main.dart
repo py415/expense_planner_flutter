@@ -1,8 +1,9 @@
-import 'package:expenseplanner_flutter/models/transaction.dart';
-import 'package:expenseplanner_flutter/views/widgets/chart.dart';
-import 'package:expenseplanner_flutter/views/widgets/new_transaction.dart';
-import 'package:expenseplanner_flutter/views/widgets/transaction_list.dart';
 import 'package:flutter/material.dart';
+
+import '../models/transaction.dart';
+import '../views/widgets/chart.dart';
+import '../views/widgets/new_transaction.dart';
+import '../views/widgets/transaction_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,15 +17,16 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.amber,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
-              title: TextStyle(
+              headline6: TextStyle(
                 fontFamily: 'OpenSans',
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
               ),
+              button: TextStyle(color: Colors.white),
             ),
         appBarTheme: AppBarTheme(
           textTheme: ThemeData.light().textTheme.copyWith(
-                title: TextStyle(
+                headline6: TextStyle(
                   fontFamily: 'OpenSans',
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -43,20 +45,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final List<Transaction> _userTransactions = [
-    // Transaction(
-    //   id: 't1',
-    //   title: 'New Shoes',
-    //   amount: 69.99,
-    //   date: DateTime.now(),
-    // ),
-    // Transaction(
-    //   id: 't2',
-    //   title: 'Weekly Groceries',
-    //   amount: 16.52,
-    //   date: DateTime.now(),
-    // )
-  ];
+  final List<Transaction> _userTransactions = [];
 
   List<Transaction> get _recentTransactions {
     return _userTransactions.where((tx) {
@@ -68,13 +57,16 @@ class _MyHomePageState extends State<MyHomePage> {
     }).toList();
   }
 
-  void _addNewTransaction(
-      {@required String txTitle, @required double txAmount}) {
+  void _addNewTransaction({
+    @required String txTitle,
+    @required double txAmount,
+    @required DateTime txDate,
+  }) {
     final newTx = Transaction(
       id: DateTime.now().toString(),
       title: txTitle,
       amount: txAmount,
-      date: DateTime.now(),
+      date: txDate,
     );
 
     setState(() {
@@ -110,14 +102,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            // Container(
-            //   width: double.infinity,
-            //   child: Card(
-            //     color: Colors.blue,
-            //     child: Text('CHART!'),
-            //     elevation: 5,
-            //   ),
-            // ),
             Chart(
               recentTransactions: _recentTransactions,
             ),
