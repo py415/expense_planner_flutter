@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
+// Blueprint for chart bar widget.
 class ChartBar extends StatelessWidget {
+  // Label that indicate days of week.
   final String label;
+  // Amount spent on specific date.
   final double spendingAmount;
+  // Percentage of spending for whole week (e.g. 12% of transactions made on Monday).
   final double spendingPctOfTotal;
 
   ChartBar({this.label, this.spendingAmount, this.spendingPctOfTotal});

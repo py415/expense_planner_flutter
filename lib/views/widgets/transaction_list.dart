@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+
+import 'transaction_item.dart';
 import '../../models/transaction.dart';
-import '../../views/widgets/transaction_item.dart';
 
 class TransactionList extends StatelessWidget {
+  // List of submitted transactions.
   final List<Transaction> transactions;
+  // Method used to handle transaction deletion.
   final Function deleteTx;
 
   TransactionList({

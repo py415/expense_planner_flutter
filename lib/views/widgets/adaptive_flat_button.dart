@@ -3,8 +3,11 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
+// Blueprint for adaptive flat button widget.
 class AdaptiveFlatButton extends StatelessWidget {
+  // Text inside button.
   final String text;
+  // Handles action when user presses button.
   final Function handler;
 
   AdaptiveFlatButton(this.text, this.handler);

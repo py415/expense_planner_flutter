@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
 import '../../models/transaction.dart';
 
+// Blueprint for specific transaction item.
 class TransactionItem extends StatelessWidget {
+  // Used to handle transactions.
+  final Transaction transaction;
+  // Method used to handle transaction deletion.
+  final Function deleteTx;
+
   const TransactionItem({
     Key key,
     @required this.transaction,
     @required this.deleteTx,
   }) : super(key: key);
-
-  final Transaction transaction;
-  final Function deleteTx;
 
   @override
   Widget build(BuildContext context) {
