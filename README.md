@@ -23,9 +23,9 @@ Expense Planner is a personal expense planner app that helps user keep track of 
 
 Here's a GIF of how the app works:
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-expense-planner.gif" width=250>
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/ios/flutter-ios-expense-planner.gif" width="250" />
 
-<img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-expense-planner.gif" width=250>
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/android/flutter-android-expense-planner.gif" width="250" />
 
 ## Libraries
 
