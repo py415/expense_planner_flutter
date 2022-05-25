@@ -1,38 +1,38 @@
-# Expense Planner
+# 💸 Expense Planner
 
-## Table of Contents
-1. [Overview](#Overview)
-2. [Product Specs](#Product-Specs)
-3. [App Walkthrough](#App-Walkthrough)
-5. [Libraries](#Libraries)
-7. [Credits](#Credits)
+## 📋 Table of Contents
+1. [Overview](#-Overview)
+2. [Product Specs](#-Product-Specs)
+3. [App Walkthrough](#-App-Walkthrough)
+5. [Libraries](#-Libraries)
+7. [Credits](#-Credits)
 
-## Overview
+## 👀 Overview
 ### Description
 
 Expense Planner is a personal expense planner app that helps user keep track of their spending habit.
 
-## Product Specs
+## 📕 Product Specs
 ### User Stories
 
 - [x] User shall be able to add new expenses with the following parameters: name, price, and date.
 - [x] User shall be able to see a chart showing their spending habits from the past seven days.
 - [x] User shall be able to remove expenses.
 
-## App Walkthrough
+## 🎬 App Walkthrough
 
 Here's a GIF of how the app works:
 
-<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/ios/flutter-ios-expense-planner.gif" width="250" />
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/GIFs/flutter/ios/flutter-ios-expense-planner.gif" width="250" />
 
-<img src="https://raw.githubusercontent.com/py415/app-resources/master/flutter/android/flutter-android-expense-planner.gif" width="250" />
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/GIFs/flutter/android/flutter-android-expense-planner.gif" width="250" />
 
-## Libraries
+## 📚 Libraries
 
 - [cupertino_icons](https://github.com/flutter/cupertino_icons) - This is an asset repo containing the default set of icon assets used by Flutter's [Cupertino widgets](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/cupertino).
 - [pedantic](https://github.com/dart-lang/pedantic) - Most of the recommended lints directly implement the guidelines set out in [Effective Dart](https://dart.dev/guides/language/effective-dart).
 - [intl](https://github.com/dart-lang/intl) - A package that provides internationalization and localization facilities, including message translation, plurals and genders, date/number formatting and parsing, and bidirectional text.
 
-## Credits
+## 💳 Credits
 
 >This is a companion project to Flutter & Dart - The Complete Guide, check out the full course at [www.academind.com](https://academind.com/).
